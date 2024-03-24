@@ -18,9 +18,6 @@ public class Tabung extends BangunRuang {
         jari_jari = scanner.nextDouble();
     }
 
-    /**
-     * Calculate the surface area of the object and print the result.
-     */
     @Override
     public void luasPermukaan() {
         double hasil = 2 * Math.PI * jari_jari * (jari_jari + tinggi);
@@ -28,16 +25,6 @@ public class Tabung extends BangunRuang {
         System.out.println("Hasil luas permukaan " + getName() + ": " + hasil);
     }
 
-    /**
-     * Calculates the volume of a cylinder and prints the result.
-     *
-     * This method calculates the volume of a cylinder using the formula:
-     * volume = π * radius^2 * height. It then calls the volume() method of the
-     * parent class to perform any additional calculations, and prints the
-     * result along with the name of the cylinder.
-     *
-     * @return void
-     */
     @Override
     public void volume() {
         double hasil = Math.PI * Math.pow(jari_jari, 2) * tinggi;
